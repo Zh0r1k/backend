@@ -22,4 +22,4 @@ const sendCategoryDeleted = (req, res) => {
 };
 
 
-module.exports = { sendAllCategories, sendCategoryCreated, sendCategoryUpdated, sendCategoryDeleted };/
+module.exports = { sendAllCategories, sendCategoryCreated, sendCategoryUpdated, sendCategoryDeleted };
