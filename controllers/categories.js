@@ -24,3 +24,4 @@ const sendCategoryDeleted = (req, res) => {
 
 module.exports = { sendAllCategories, sendCategoryCreated, sendCategoryUpdated, sendCategoryDeleted };
 //eshkere
+/
