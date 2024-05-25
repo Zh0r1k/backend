@@ -75,6 +75,4 @@ const hashPassword = async(req, res, next) => {
     }
 }
 
-
-
-module.exports = { findAllUsers, findUserById, createUser, updateUser, checkEmptyNameAndEmail, deleteUser, hashPassword }
+module.exports = { findAllUsers, findUserById, createUser, updateUser, checkEmptyNameAndEmail, deleteUser, hashPassword } 
