@@ -1,4 +1,6 @@
+
 const sendAllGames = (req, res) => {
+    console.log(req)
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify(req.gamesArray));
 };
@@ -16,10 +18,15 @@ const sendGameUpdated = (req, res) => {
 
 //DELETE
 
+const sendGameById = (req, res) => {
+    res.setHeader("Content-Type", "application/json");
+    res.end(JSON.stringify(req.game));
+  };
+
 const sendGameDeleted = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify(req.game));
 };
 
-module.exports = { sendAllGames, sendGameCreated, sendGameUpdated, sendGameDeleted };
+module.exports = { sendAllGames, sendGameCreated, sendGameUpdated, sendGameDeleted, sendGameById };
 
