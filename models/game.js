@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const userModel = require('./users');
+const usersModel = require('./users');
 const categoryModel = require('./category');
 
 const gameShema = new mongoose.Schema({
@@ -25,7 +25,7 @@ const gameShema = new mongoose.Schema({
     },
     users: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: userModel
+        ref: usersModel
     }],
     categories: [{
         type: mongoose.Schema.Types.ObjectId,
