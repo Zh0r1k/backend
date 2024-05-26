@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const userModel = require('./user');
+const userModel = require('./users');
 const categoryModel = require('./category');
 
 const gameShema = new mongoose.Schema({
