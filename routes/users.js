@@ -1,6 +1,3 @@
-const usersRouter = require('express').Router();
-
-
 const {findAllUsers, createUser, findUserById, updateUser, deleteUser, checkEmptyNameAndEmail, checkIsUserExists, checkEmptyNameAndEmailAndPassword, hashPassword} = require('../middlewares/users');
 const {sendAllUsers, sendUserCreated, sendUserById, sendUserUpdated, sendUserDeleted, sendMe} = require('../controllers/users');
 const { checkAuth } = require('../middlewares/auth');
